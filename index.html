@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Lane Song Finder 🎶</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        select, button { padding: 10px; margin: 10px; font-size: 16px; }
+        #results { margin-top: 20px; }
+        .song-item { margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>🎶 Memory Lane Song Finder 🎶</h1>
+
+    <label for="year">Enter a Year (1950-1990):</label>
+    <input type="number" id="year" min="1950" max="1990" placeholder="e.g., 1978">
+
+    <label for="genre">Choose Genre:</label>
+    <select id="genre">
+        <option value="all">All Genres</option>
+        <option value="rock">Rock</option>
+        <option value="pop">Pop</option>
+        <option value="r&b">R&B</option>
+        <option value="disco">Disco</option>
+    </select>
+
+    <button onclick="findSongs()">Find Songs</button>
+    <button onclick="randomSong()">Surprise Me! 🎲</button>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
